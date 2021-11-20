@@ -1,3 +1,7 @@
+*{
+
+  font-family: 'Arimo', sans-serif;
+}
 body{
   width: 100vw;
   overflow-x: hidden;
@@ -21,13 +25,16 @@ header h1{
 }
 
 header .logo{
-  margin-bottom:3em ;
+  position: relative;
+  margin-bottom:2.5em ;
 }
 
 header .title{
   
   justify-self: center;
+  line-height: 2;
 }
+
 header .mouse-icon{
 position: absolute;
 bottom: 1rem;
