@@ -73,3 +73,10 @@ bottom: 1rem;
 #contact-us form{
   box-sizing: content-box;
 }
+
+.socials{
+  width: fit-content;
+  margin: auto;
+  margin-top:3rem;
+  margin-bottom: 3rem;
+}
