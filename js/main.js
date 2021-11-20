@@ -2,5 +2,5 @@
 $(()=>{
 $('header').height($(window).height());
 
-
+$("p").addClass("text\-center");
 });
