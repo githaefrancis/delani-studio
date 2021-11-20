@@ -2,4 +2,33 @@ header{
   background: url('../img/hero_image.jpg');
   background-position: bottom;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#FFFFFF;
+  line-height: 2.5;
 }
+
+
+header h1{
+  
+  font-weight:bold;
+}
+
+header .logo{
+  margin-bottom:3em ;
+}
+
+header .title{
+  flex-grow: 80%;
+  justify-self: center;
+}
+header .mouse-icon{
+position: relative;
+top: 20%;
+
+  
+
+}
+
