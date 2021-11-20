@@ -39,3 +39,17 @@ bottom: 1rem;
 .about-section h2{
   margin-top: 3rem;
 }
+
+
+/* Services section */
+
+#services{
+  margin-top: 3rem;
+  background:url('../img/services_image.jpg');
+  background-position: top;
+  color:#FFFFFF;
+  min-height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
