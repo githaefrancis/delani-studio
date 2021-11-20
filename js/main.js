@@ -18,7 +18,7 @@ $(() => {
   // Populate the portfolio section
   portfolioItems.forEach((portfolioItem) => {
     $("#portfolio").append(
-      `<div class="col-lg-3 portfolioItem" id="${portfolioItem}"><img src="../img/portfolio/${portfolioItem}"></div>`
+      `<div class="col-lg-3 portfolioItem px-2" id="${portfolioItem}"><img src="../img/portfolio/${portfolioItem}" class="img-fluid"></div>`
     );
   });
 });

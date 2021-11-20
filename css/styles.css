@@ -62,6 +62,14 @@ bottom: 1rem;
   align-items: center;
 }
 
+/* portfolio section */
+.portfolioItem{
+  max-width: fit-content;
+}
+.portfolio-div{
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
 /* contact us section */
 #contact-us{
   background:url('../img/contact.jpg');
