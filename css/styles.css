@@ -90,13 +90,20 @@ bottom: 1rem;
   color: #FFFFFF;
 }
 #message{
-  margin-right: 0;
+  margin-left: 3em;
 }
 
 #name::placeholder,#email::placeholder,#message::placeholder{
   color:#FFFFFF;
   opacity: 1;
 }
+
+#submit-message{
+  max-width: 20rem;
+  max-height: 3rem;
+
+}
+
 /* footer section */
 .socials{
   width: fit-content;
