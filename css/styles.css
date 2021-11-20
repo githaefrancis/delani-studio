@@ -34,3 +34,8 @@ bottom: 1rem;
 
 }
 
+/* about section css rules */
+
+.about-section h2{
+  margin-top: 3rem;
+}
