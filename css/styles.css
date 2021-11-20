@@ -87,8 +87,16 @@ bottom: 1rem;
 }
 #name,#email,#message{
   background: transparent;
+  color: #FFFFFF;
+}
+#message{
+  margin-right: 0;
 }
 
+#name::placeholder,#email::placeholder,#message::placeholder{
+  color:#FFFFFF;
+  opacity: 1;
+}
 /* footer section */
 .socials{
   width: fit-content;
