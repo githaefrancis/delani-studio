@@ -46,12 +46,7 @@ $(() => {
 
   $(".portfolioItem").mouseenter((e) => {
     id = e.target.id;
-    console.log(typeof id);
-    console.log(e.target.id);
-    console.log(/^work.*/.test(id));
     if (/^work.*/.test(id)) {
-      console.log(e.target.id);
-      console.log("hellllll0");
       overlayId = id.slice(4, 5);
       $(".portfolio-description" + overlayId).css("display", "block");
     } else {
@@ -61,12 +56,7 @@ $(() => {
   // mouse leave effect
   $(".portfolioItem").mouseleave((e) => {
     id = e.target.id;
-    console.log(typeof id);
-    console.log(e.target.id);
-    console.log(/^work.*/.test(id));
     if (/^work.*/.test(id)) {
-      console.log(e.target.id);
-      console.log("hellllll0");
       overlayId = id.slice(4, 5);
       $(".portfolio-description" + overlayId).css("display", "none");
     } else {
@@ -84,12 +74,18 @@ $(() => {
     if (!name || !email || !message) {
       alert("please fill in all the fields");
     } else {
-      alert(
-        `${name} we have received your message. Thank you for reaching out to us.`
-      );
       $("#name").val("");
       $("#email").val("");
       $("#message").val("");
+      $(".modal-body .content").text(
+        `${name} we have received your message. Thank you for reaching out to us.`
+      );
+      $(".modal").show();
     }
+  });
+
+  // close modal
+  $(".close").click(() => {
+    $(".modal").hide();
   });
 });
