@@ -1,12 +1,12 @@
 let portfolio = [
-  { name: "Launch", img: "work1.jpg" },
-  { name: "Security", img: "work2.jpg" },
-  { name: "Studio", img: "work3.jpg" },
-  { name: "Portfolio", img: "work4.jpg" },
-  { name: "Blog", img: "work5.jpg" },
-  { name: "POS", img: "work6.jpg" },
-  { name: "Logo Mockup", img: "work7.jpg" },
-  { name: "Restaurant", img: "work8.jpg" },
+  { name: "Launch", img: "worka.jpg" },
+  { name: "Security", img: "workb.jpg" },
+  { name: "Studio", img: "workc.jpg" },
+  { name: "Portfolio", img: "workd.jpg" },
+  { name: "Blog", img: "worke.jpg" },
+  { name: "POS", img: "workf.jpg" },
+  { name: "Logo Mockup", img: "workg.jpg" },
+  { name: "Restaurant", img: "workh.jpg" },
 ];
 
 //run javascript when DOM is ready
