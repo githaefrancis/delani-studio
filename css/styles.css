@@ -78,10 +78,26 @@ bottom: 1rem;
 /* portfolio section */
 .portfolioItem{
   max-width: fit-content;
+  position: relative;
 }
 .portfolio-div{
   margin-left: 6rem;
   margin-right: 6rem;
+}
+
+.portfolio-description{
+  position: absolute;
+  top:1em; 
+  left:1em;
+  color: white;
+  width: 85%;
+  height: 85%;
+  border: 5px solid #FFFFFF;
+  background:rgba(17, 15, 15, 0.5);
+}
+
+.portfolio-description h4{
+  padding: 1em;
 }
 /* contact us section */
 #contact-us{
