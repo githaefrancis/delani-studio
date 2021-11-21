@@ -87,18 +87,19 @@ bottom: 1rem;
 
 .portfolio-description{
   position: absolute;
-  top:1em; 
-  left:1em;
+  top:10%;
+  left:10%;
   color: white;
-  width: 85%;
-  height: 85%;
+  width: 80%;
+  height: 80%;
   border: 5px solid #FFFFFF;
   background:rgba(17, 15, 15, 0.5);
   display: none;
 }
 
 .portfolio-description h4{
-  padding: 1em;
+  padding: 5%;
+  font-size: 100%;
 }
 /* contact us section */
 #contact-us{
