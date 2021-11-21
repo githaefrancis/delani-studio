@@ -63,12 +63,18 @@ bottom: 1rem;
 
 /* What we do section */
 
-.what-we-do-icons div{
-  display: inherit;
-  flex-direction: column;
-  align-items: center;
+
+.what-we-do-icons img{
+  display: block;
+  margin:auto;
+  cursor: pointer;
 }
 
+/* hide description */
+.design-description,.development-description,.management-description{
+  display: none;
+  cursor: pointer;
+}
 /* portfolio section */
 .portfolioItem{
   max-width: fit-content;

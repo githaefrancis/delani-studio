@@ -21,4 +21,17 @@ $(() => {
       `<div class="col-lg-3 portfolioItem px-2" id="${portfolioItem}"><img src="../img/portfolio/${portfolioItem}" class="img-fluid"></div>`
     );
   });
+
+  $('.design').click((e)=>{
+    $('.design-description').toggle();
+    $('#design').toggle();
+  });
+  $('.development').click((e)=>{
+    $('.development-description').toggle();
+    $('#development').toggle();
+  });
+  $('.management').click((e)=>{
+    $('.management-description').toggle();
+    $('#management').toggle();
+  });
 });
