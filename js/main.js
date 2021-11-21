@@ -1,13 +1,3 @@
-let portfolioItems = [
-  "work1.jpg",
-  "work2.jpg",
-  "work3.jpg",
-  "work4.jpg",
-  "work5.jpg",
-  "work6.jpg",
-  "work7.jpg",
-  "work8.jpg",
-];
 let portfolio = [
   { name: "Launch", img: "work1.jpg" },
   { name: "Security", img: "work2.jpg" },
@@ -28,7 +18,7 @@ $(() => {
   // Populate the portfolio section
   portfolio.forEach((portfolioItem) => {
     $("#portfolio").append(
-      `<div class="col-lg-3 portfolioItem  px-2" id="${
+      `<div class="col-lg-3 col-md-3 col-sm-12 portfolioItem  px-2" id="${
         portfolioItem["img"]
       }"><img src="../img/portfolio/${portfolioItem["img"]}" id="${
         portfolioItem["img"]
@@ -65,7 +55,7 @@ $(() => {
       overlayId = id.slice(4, 5);
       $(".portfolio-description" + overlayId).css("display", "block");
     } else {
-      console.log("failed");
+      return;
     }
   });
   // mouse leave effect
@@ -80,7 +70,26 @@ $(() => {
       overlayId = id.slice(4, 5);
       $(".portfolio-description" + overlayId).css("display", "none");
     } else {
-      console.log("failed");
+      return;
+    }
+  });
+
+  // handle form submission
+
+  $("#contact-form").submit((e) => {
+    let name = $("#name").val();
+    let email = $("#email").val();
+    let message = $("#message").val();
+    e.preventDefault();
+    if (!name || !email || !message) {
+      alert("please fill in all the fields");
+    } else {
+      alert(
+        `${name} we have received your message. Thank you for reaching out to us.`
+      );
+      $("#name").val("");
+      $("#email").val("");
+      $("#message").val("");
     }
   });
 });
