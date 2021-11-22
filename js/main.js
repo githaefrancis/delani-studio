@@ -28,6 +28,8 @@ $(() => {
     );
   });
   // Toggle between what we do icons and description
+
+  
   $(".design").click((e) => {
     $(".design-description").toggle();
     $("#design").toggle();
