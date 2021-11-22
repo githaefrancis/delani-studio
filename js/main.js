@@ -29,7 +29,6 @@ $(() => {
   });
   // Toggle between what we do icons and description
 
-  
   $(".design").click((e) => {
     $(".design-description").toggle();
     $("#design").toggle();
@@ -66,13 +65,17 @@ $(() => {
     let name = $("#name").val();
     let email = $("#email").val();
     let message = $("#message").val();
-    e.preventDefault();
+    let form = $("#contact-form")[0];
+    console.log(form);
+    // e.preventDefault();
     if (!name || !email || !message) {
       alert("please fill in all the fields");
     } else {
-      $("#name").val("");
-      $("#email").val("");
-      $("#message").val("");
+      form.method = "post";
+      form.target = "_blank";
+      form.action =
+        "https://moringaschool.us20.list-manage.com/subscribe/post?u=f434036e6374fa4caf40735e4&amp;id=43a389e165";
+
       $(".modal-body .content").text(
         `${name} we have received your message. Thank you for reaching out to us.`
       );
@@ -83,5 +86,8 @@ $(() => {
   // close modal
   $(".close").click(() => {
     $(".modal").hide();
+    $("#name").val("");
+    $("#email").val("");
+    $("#message").val("");
   });
 });
