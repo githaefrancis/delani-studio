@@ -20,7 +20,7 @@ $(() => {
     $("#portfolio").append(
       `<div class="col-lg-3 col-md-3 col-sm-12 portfolioItem  px-2" id="${
         portfolioItem["img"]
-      }"><img src="../img/portfolio/${portfolioItem["img"]}" id="${
+      }"><img src="./img/portfolio/${portfolioItem["img"]}" id="${
         portfolioItem["img"]
       }" class="img-fluid"><div class="portfolio-description portfolio-description${portfolioItem[
         "img"
