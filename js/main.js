@@ -42,25 +42,20 @@ $(() => {
   });
 
   //hover effect on porfolio
-
-  $(".portfolioItem").mouseenter((e) => {
-    id = e.target.id;
+  let portFolioHover = (id, property) => {
     if (/^work.*/.test(id)) {
       overlayId = id.slice(4, 5);
-      $(".portfolio-description" + overlayId).css("display", "block");
+      $(".portfolio-description" + overlayId).css("display", property);
     } else {
       return;
     }
+  };
+  $(".portfolioItem").mouseenter((e) => {
+    portFolioHover(e.target.id, "block");
   });
   // mouse leave effect
   $(".portfolioItem").mouseleave((e) => {
-    id = e.target.id;
-    if (/^work.*/.test(id)) {
-      overlayId = id.slice(4, 5);
-      $(".portfolio-description" + overlayId).css("display", "none");
-    } else {
-      return;
-    }
+    portFolioHover(e.target.id, "none");
   });
 
   // handle form submission
