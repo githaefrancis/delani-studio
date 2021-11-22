@@ -66,8 +66,8 @@ $(() => {
     let email = $("#email").val();
     let message = $("#message").val();
     let form = $("#contact-form")[0];
-    console.log(form);
     if (!name || !email || !message) {
+      e.preventDefault();
       alert("please fill in all the fields");
     } else {
       form.method = "post";
