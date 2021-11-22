@@ -31,7 +31,6 @@ $(() => {
   $(".design").click((e) => {
     $(".design-description").toggle();
     $("#design").toggle();
-    $(".portfolioItem").addClass("hello");
   });
   $(".development").click((e) => {
     $(".development-description").toggle();
